@@ -1,31 +1,141 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/output.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/output.css">
+    <title>SoundHub</title>
 </head>
-<body class="bg-black h-full flex items-center justify-center flex-col">
-    <header class="text-branco flex bg-red-600 h-[10vh] w-full font-aldo">
 
-        <div class="flex items-center justify-center text-white hover:bg-black w-[4vw]">
-            Ínicio
-        </div>
-        <div class="flex items-center justify-center text-white hover:bg-black w-[4 vw]">
-            Novidades
-        </div>
-        <div class="flex items-center justify-center text-white hover:bg-black w-[4vw]">
-            Séries
-        </div>
-        <div class="flex items-center justify-center text-white hover:bg-black w-[3vw] ">
-            Filmes
-        </div>
-        <div class="flex items-center justify-items-end">
-            <input class="w-[500px] text-black" type="text">
-        </div>
-        <div class="flex items-center justify-center text-white  w-[10vw]">
+<body class="bg-background">
+    <!-- Barra Lateral (Header) -->
+    <header class=" font-bold justify-center flex m-10 gap-10 text-white">
 
-        </div>
+        <div><input type="text" placeholder="Search" class="h-8 rounded-lg border-2 border-white px-2 py-1"/></div>
+        <div class="text-xl px-3 py-1">About</div>
+        <div class="text-xl px-3 py-1">Contact</div>
+        <div class="text-xl px-3 py-1">Premium</div>
+        <div class="text-xl hover:rounded-lg hover:border hover:border-white px-3 py-1 bg-login hover:bg-signup">Login</div>
+        <div class="text-xl hover:rounded-lg hover:border hover:border-white px-3 py-1 bg-login hover:bg-signup">SignUp</div>
     </header>
+
+    
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <nav class="bg-header font-bold fixed top-0 left-0 h-full bg-gray-800 p-10 ">
+            <div class="text-4xl text-gradient2">
+                SoundHub
+            </div>
+            <!-- MENU Section -->
+            <div class="mb-8">
+                <div class="text-lg text-subtitle ">Menu</div>
+                <div class="flex gap-2 text-xl text-white hover:bg-bgborder hover:rounded-lg p-2 mb-2">Home</div>
+                <div class="flex gap-2 text-xl text-white hover:bg-bgborder hover:rounded-lg p-2 mb-2">Discover</div>
+                <div class="flex gap-2 text-xl text-white hover:bg-bgborder hover:rounded-lg p-2 mb-2">Albums</div>
+                <div class="flex gap-2 text-xl text-white hover:bg-bgborder hover:rounded-lg p-2 mb-2">Artists</div>
+            </div>
+    
+            <!-- LIBRARY Section -->
+            <div class="mb-8">
+                <div class="text-lg text-subtitle mb-4">Library</div>
+                <div class="text-xl text-white hover:bg-bgborder hover:rounded-lg p-2 mb-2">Adicionados Recentemente</div>
+                <div class="text-xl text-white hover:bg-bgborder hover:rounded-lg p-2 mb-2">Mais Tocadas</div>
+            </div>
+    
+            <!-- PLAYLIST Section -->
+            <div class="mb-8">
+                <div class="text-lg text-subtitle mb-4">Playlist and Favorites</div>
+                <div class="text-xl text-white hover:bg-bgborder hover:rounded-lg p-2 mb-2">Your Favorites</div>
+                <div class="text-xl text-white hover:bg-bgborder hover:rounded-lg p-2 mb-2">Your Playlist</div>
+                <div class="text-xl text-playlist hover:bg-bgborder hover:rounded-lg p-2 mb-2">Add Playlist</div>
+            </div>
+    
+            <!-- GENERAL Section -->
+            <div>
+                <div class="text-lg text-subtitle mb-4">General</div>
+                <div class="text-xl text-white hover:bg-bgborder hover:rounded-lg p-2 mb-2">Setting</div>
+                <div class="text-xl text-white hover:bg-bgborder hover:rounded-lg p-2 mb-2">Logout</div>
+            </div>
+        </nav>
+    </main>
+
+    <!-- Cards Fixados na Parte Inferior -->
+    <div class="fixed bottom-0 left-80 bg-gray-900 p-4 grid grid-cols-1 items-center w-3/4">
+        <div class="text-2xl font-semibold">New Release Songs</div>
+        <div class="flex space-x-4">
+            <!-- Card 1 -->
+            <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden w-48">
+                <img class="w-full h-28 object-cover" src="https://via.placeholder.com/150" alt="Album Art">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold mb-2">Song Title 1</h3>
+                    <p class="text-gray-400 text-sm mb-2">Artist Name 1</p>
+                    <div class="flex items-center justify-between">
+                        <button class="bg-green-500 text-white px-4 py-2 rounded-lg text-sm">Play</button>
+                        <button class="text-gray-400 hover:text-white">...</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden w-48">
+                <img class="w-full h-28 object-cover" src="https://via.placeholder.com/150" alt="Album Art">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold mb-2">Song Title 2</h3>
+                    <p class="text-gray-400 text-sm mb-2">Artist Name 2</p>
+                    <div class="flex items-center justify-between">
+                        <button class="bg-green-500 text-white px-4 py-2 rounded-lg text-sm">Play</button>
+                        <button class="text-gray-400 hover:text-white">...</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden w-48">
+                <img class="w-full h-28 object-cover" src="https://via.placeholder.com/150" alt="Album Art">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold mb-2">Song Title 3</h3>
+                    <p class="text-gray-400 text-sm mb-2">Artist Name 3</p>
+                    <div class="flex items-center justify-between">
+                        <button class="bg-green-500 text-white px-4 py-2 rounded-lg text-sm">Play</button>
+                        <button class="text-gray-400 hover:text-white">...</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden w-48">
+                <img class="w-full h-28 object-cover" src="https://via.placeholder.com/150" alt="Album Art">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold mb-2">Song Title 4</h3>
+                    <p class="text-gray-400 text-sm mb-2">Artist Name 4</p>
+                    <div class="flex items-center justify-between">
+                        <button class="bg-green-500 text-white px-4 py-2 rounded-lg text-sm">Play</button>
+                        <button class="text-gray-400 hover:text-white">...</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden w-48">
+                <img class="w-full h-28 object-cover" src="https://via.placeholder.com/150" alt="Album Art">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold mb-2">Song Title 5</h3>
+                    <p class="text-gray-400 text-sm mb-2">Artist Name 5</p>
+                    <div class="flex items-center justify-between">
+                        <button class="bg-green-500 text-white px-4 py-2 rounded-lg text-sm">Play</button>
+                        <button class="text-gray-400 hover:text-white">...</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Botão de Adição -->
+        <button
+            class="bg-green-500 text-white rounded-full w-12 h-12 flex items-center justify-center hover:bg-green-600 ml-4">
+            <span class="text-2xl">+</span>
+        </button>
+    </div>
+    </div>
+
+    </div>
 </body>
+
 </html>
