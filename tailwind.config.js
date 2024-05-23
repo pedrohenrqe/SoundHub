@@ -16,7 +16,8 @@
         background: '#252525',
         playlist: '#0E9EEF',
         login: '#1E1E1E',
-        signup: '#5F0BC9'
+        signup: '#5F0BC9',
+        card: '#131313'
       }
     },
     plugins: [],

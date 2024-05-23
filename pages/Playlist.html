@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../src/output.css">
+  <title>SoundHub</title>
+</head>
+
+<body class="bg-background">
+  <!-- Conteúdo Principal -->
+  <main class="flex flex-col items-center justify-center min-h-screen">
+    <nav class="bg-header font-bold fixed top-0 left-0 h-full bg-gray-800 p-5">
+      <div class="text-4xl text-gradient2">
+        SoundHub
+      </div>
+      <!-- MENU Section -->
+      <div class="mb-8">
+        <div class="text-lg text-subtitle ">Menu</div>
+        <div class="flex gap-2 text-xl text-white hover:bg-bgborder hover:rounded-lg p-2 mb-2"><a href="./index.html">Home</a></div>
+        <div class="flex gap-2 text-xl text-white hover:bg-bgborder hover:rounded-lg p-2 mb-2">Discover</div>
+        <div class="flex gap-2 text-xl text-white hover:bg-bgborder hover:rounded-lg p-2 mb-2">Albums</div>
+        <div class="flex gap-2 text-xl text-white hover:bg-bgborder hover:rounded-lg p-2 mb-2">Artists</div>
+      </div>
+
+      <!-- LIBRARY Section -->
+      <div class="mb-8">
+        <div class="text-lg text-subtitle mb-4">Library</div>
+        <div class="text-xl text-white hover:bg-bgborder hover:rounded-lg p-2 mb-2">Adicionados Recentemente
+        </div>
+        <div class="text-xl text-white hover:bg-bgborder hover:rounded-lg p-2 mb-2">Mais Tocadas</div>
+      </div>
+
+      <!-- PLAYLIST Section -->
+      <div class="mb-8">
+        <div class="text-lg text-subtitle mb-4">Playlist and Favorites</div>
+        <div class="text-xl text-white hover:bg-bgborder hover:rounded-lg p-2 mb-2">Your Favorites</div>
+        <div class="text-xl text-white hover:bg-bgborder hover:rounded-lg p-2 mb-2">Your Playlist</div>
+        <div class="text-xl text-playlist hover:bg-bgborder hover:rounded-lg p-2 mb-2">Add Playlist</div>
+      </div>
+
+      <!-- GENERAL Section -->
+      <div>
+        <div class="text-lg text-subtitle mb-4">General</div>
+        <div class="text-xl text-white hover:bg-bgborder hover:rounded-lg p-2 mb-2">Setting</div>
+        <div class="text-xl text-white hover:bg-bgborder hover:rounded-lg p-2 mb-2">Logout</div>
+      </div>
+    </nav>
+
+    <div class="text-2xl font-semibold mb-4 text-white">New Release Songs</div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+      <!-- Card 1 -->
+      <div class="bg-card rounded-lg shadow-md overflow-hidden w-64 mx-auto flex items-center justify-center">
+        <div class="bg-white rounded-full w-16 h-16 flex items-center justify-center cursor-pointer hover:bg-green-500">
+          <span class="text-2xl text-gray-800"><a href="./CriarPlaylist.html">+</a></span>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden w-64 mx-auto">
+        <img class="w-full h-40 object-cover" src="https://via.placeholder.com/300" alt="Album Art">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold mb-2">Song Title 2</h3>
+          <p class="text-gray-400 text-sm mb-2">Artist Name 2</p>
+          <div class="flex items-center justify-between">
+            <button class="bg-green-500 text-white px-4 py-2 rounded-lg text-sm">Play</button>
+            <button class="text-gray-400 hover:text-white">...</button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden w-64 mx-auto">
+        <img class="w-full h-40 object-cover" src="https://via.placeholder.com/300" alt="Album Art">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold mb-2">Song Title 3</h3>
+          <p class="text-gray-400 text-sm mb-2">Artist Name 3</p>
+          <div class="flex items-center justify-between">
+            <button class="bg-green-500 text-white px-4 py-2 rounded-lg text-sm">Play</button>
+            <button class="text-gray-400 hover:text-white">...</button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden w-64 mx-auto">
+        <img class="w-full h-40 object-cover" src="https://via.placeholder.com/300" alt="Album Art">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold mb-2">Song Title 4</h3>
+          <p class="text-gray-400 text-sm mb-2">Artist Name 4</p>
+          <div class="flex items-center justify-between">
+            <button class="bg-green-500 text-white px-4 py-2 rounded-lg text-sm">Play</button>
+            <button class="text-gray-400 hover:text-white">...</button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden w-64 mx-auto">
+        <img class="w-full h-40 object-cover" src="https://via.placeholder.com/300" alt="Album Art">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold mb-2">Song Title 5</h3>
+          <p class="text-gray-400 text-sm mb-2">Artist Name 5</p>
+          <div class="flex items-center justify-between">
+            <button class="bg-green-500 text-white px-4 py-2 rounded-lg text-sm">Play</button>
+            <button class="text-gray-400 hover:text-white">...</button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden w-64 mx-auto">
+        <img class="w-full h-40 object-cover" src="https://via.placeholder.com/300" alt="Album Art">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold mb-2">Song Title 6</h3>
+          <p class="text-gray-400 text-sm mb-2">Artist Name 6</p>
+          <div class="flex items-center justify-between">
+            <button class="bg-green-500 text-white px-4 py-2 rounded-lg text-sm">Play</button>
+            <button class="text-gray-400 hover:text-white">...</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
