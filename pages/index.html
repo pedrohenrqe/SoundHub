@@ -9,7 +9,7 @@
     <title>SoundHub</title>
 </head>
 
-<body class="bg-background">
+<body class="bg-background flex flex-col min-h-screen">
     <!-- Barra Lateral (Header) -->
     <header class=" font-bold justify-center flex m-10 gap-10">
         <div><input type="text" placeholder="Search" class="h-8 rounded-lg border-2 border-white px-2 py-1" /></div>
@@ -25,8 +25,8 @@
     </header>
 
     <!-- Conteúdo Principal -->
-    <main>
-        <nav class="bg-header font-bold fixed top-0 left-0 h-full bg-gray-800 p-5">
+    <main class="flex flex-col items-center justify-center">
+        <nav class="bg-header font-bold fixed top-0 left-0 h-full bg-gray-800 p-5 w-64">
             <div class="text-4xl text-gradient2">
                 SoundHub
             </div>
@@ -63,13 +63,11 @@
                 <div class="text-xl text-white hover:bg-bgborder hover:rounded-lg p-2 mb-2"><a href="./Login.html">Logout</a></div>
             </div>
         </nav>
-    </main>
 
-    <footer class="text-white flex">
         <!-- Cards Fixados na Parte Inferior -->
-        <div class="fixed bottom-0 left-64 bg-gray-900 p-4 w-3/4">
+        <div class="text-white font-bold justify-center m-10 gap-10">
             <div class="text-2xl font-semibold mb-4">New Release Songs</div>
-            <div class="flex space-x-4 mb-4">
+            <div class="flex grid-cols-2 space-x-4 mb-4">
                 <!-- Card 1 -->
                 <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden w-44">
                     <img class="w-full h-28 object-cover" src="https://via.placeholder.com/150" alt="Album Art">
@@ -131,15 +129,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Botão de Adição -->
-            <div class="flex justify-center">
-                <button class="bg-green-500 text-white rounded-full w-12 h-12 flex hover:bg-green-600">
-                    <span class="text-2xl">+</span>
-                </button>
-            </div>
         </div>
-    </footer>
-
+    </main>
 </body>
-
 </html>
